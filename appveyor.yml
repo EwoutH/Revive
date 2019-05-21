@@ -1,0 +1,9 @@
+image: Visual Studio 2017
+configuration: Release
+
+build:
+  project: Revive.sln
+
+artifacts:
+    - path: bin\Release\*Revive*.exe
+      name: $(APPVEYOR_PROJECT_NAME)
